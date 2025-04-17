@@ -11,9 +11,20 @@ function HeroSection() {
 
   return (
     <div className='hero-container'>
-      <video src='/Final Videos/HeroVideo.mp4' autoPlay loop muted />
+      
       <h1>SKY IS THE LIMIT</h1>
-
+      <video 
+        src="/Final Videos/HeroVideo.mp4" 
+        autoPlay 
+        loop 
+        muted 
+        playsInline
+      >
+        <source src="/Final Videos/HeroVideo.mp4" type="video/mp4" />
+        <source src="/Final Videos/HeroVideo.webm" type="video/webm" />
+        <source src="/Final Videos/HeroVideo.ogg" type="video/ogg" />
+        Your browser does not support the video tag.
+      </video>
       <div className='hero-btns'>
         <Button
           className='btns'
