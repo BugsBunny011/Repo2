@@ -54,7 +54,7 @@ function Navbar() {
           </li>
           <li className="nav-item">
             <div className="nav-links" onClick={() => toggleDropdown('about')}>
-              About Us
+              About Us <span className="arrow-icon">{dropdown.about ? '▲' : '▼'}</span>
             </div>
             {dropdown.about && (
               <div className="dropdown-content">
@@ -67,7 +67,7 @@ function Navbar() {
           <li className="nav-item">
             
             <div className="nav-links" onClick={() => toggleDropdown('services')}>
-              Services
+              Services <span className="arrow-icon">{dropdown.services ? '▲' : '▼'}</span>
             </div>
             {dropdown.services && (
               <div className="dropdown-content">
