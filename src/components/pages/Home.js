@@ -1,5 +1,4 @@
 import React from 'react';
-import App from '../../App';
 import HeroSection from '../HeroSection';
 import Cards from '../Cards'
 import Footer from '../Footer'
