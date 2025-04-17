@@ -65,8 +65,9 @@ function Navbar() {
             )}
           </li>
           <li className="nav-item">
+            
             <div className="nav-links" onClick={() => toggleDropdown('services')}>
-      
+              Services
             </div>
             {dropdown.services && (
               <div className="dropdown-content">
