@@ -11,7 +11,7 @@ function Footer() {
             Follow us on linkedin for more information.
         </p>
         <p className='footer-subscription-text'>
-            Get discount a discount when you have followed us on Linkedin.
+            Get a discount when you have followed us on Linkedin.
         </p>
         
       </section>
@@ -43,7 +43,7 @@ function Footer() {
         <div className='footer-link-wrapper'>
             <div className='footer-link-items'>
                 <h2>Social Media</h2>
-                <Link to='/'>Linkedin</Link>
+                <Link to='https://www.linkedin.com/company/linkwel-engineers-le/about/?viewAsMember=true'>Linkedin</Link>
             </div>
         </div>
       </div>
@@ -60,29 +60,8 @@ function Footer() {
             </div>
             <small className='website-rights'></small>
             <div className='social-icons'>
-                <Link className='social-icon-link facebook'
-                to='/'
-                target='_blank'
-                aria-label='Facebook'
-                >
-                    <i className='fab fa-facebook-f'></i>
-                </Link>
-                <Link className='social-icon-link instagram'
-                to='/'
-                target='_blank'
-                aria-label='Instagram'
-                >
-                    <i className='fab fa-instagram'></i>
-                </Link>
-                <Link className='social-icon-link twitter'
-                to='/'
-                target='_blank'
-                aria-label='Twitter'
-                >
-                    <i className='fab fa-twitter'></i>
-                </Link>
                 <Link className='social-icon-link linkedin'
-                to='/'
+                to='https://www.linkedin.com/company/linkwel-engineers-le/about/?viewAsMember=true'
                 target='_blank'
                 aria-label='Linkedin'
                 >
