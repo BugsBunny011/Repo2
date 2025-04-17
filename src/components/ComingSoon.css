@@ -9,11 +9,9 @@
 }
 
 .coming-soon-logo {
-  width: 100%;
-  height: 100%;
+  width: 100%; /* Make the image responsive */
+  height: 100%; /* Ensure the image takes full height of the container */
   object-fit: cover; /* Ensures the image covers the container while maintaining its aspect ratio */
-  max-width: 1200px; /* Set a maximum width */
-  max-height: 675px; /* Set a maximum height for 16:9 aspect ratio */
   animation: fadeIn 2s ease-in-out;
 }
 
@@ -43,5 +41,21 @@
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .coming-soon-container {
+    padding: 10px;
+  }
+
+  .coming-soon-logo {
+    width: 100%; /* Ensure it takes full width on smaller screens */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .coming-soon-text {
+    font-size: 2rem; /* Adjust font size for mobile */
   }
 }
