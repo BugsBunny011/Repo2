@@ -1,0 +1,213 @@
+:root {
+    --primary: #203575;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+  }
+  
+  .navbar {
+    background-color: #213975;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    max-width: 1500px;
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  .navbar-logo {
+    color: #fff;
+    justify-self: start;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo-img {
+    height: 75px;
+    width: 120px;
+  }
+  
+  .fa-typo3 {
+    margin-left: 0.5rem;
+    font-size: 1.8rem;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  .nav-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 60vw;
+    justify-content: end;
+    margin-right: 2rem;
+  }
+  
+  .nav-item {
+    height: 80px;
+    position: relative; /* Added for dropdown positioning */
+  }
+  
+  .nav-links {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+  }
+  
+  .nav-links:hover {
+    color: #000000;
+    transition: all 0.2s ease-out;
+  }
+  
+  .nav-links-mobile {
+    display: none;
+  }
+  
+  /* Dropdown styles */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #213675;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.2s ease-out;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #575757;
+  }
+  
+  .nav-item:hover .dropdown-content {
+    display: block;
+  }
+  
+  @media screen and (max-width: 960px) {
+  
+    .menu-icon {
+      display: block;
+      position: absolute;
+      color: #fff;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+    
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: auto; /*Adjust the height of the whole mobile screen*/
+      position: absolute;
+      top: 90px;
+      left: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      align-items: center;
+      justify-content: center; /* Adjusted alignment of the links in mobile menu*/
+      z-index: 1; /* Add z-index to ensure dropdowns appear above other content */
+    }
+  
+    .nav-menu.active {
+      background-image: url('/public/Final Images/Capsule lift in a glass lobby.png');
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      position: fixed; /* Change position to fixed */
+      bottom: 0;
+      width: 100%;
+    }
+  
+    .nav-links {
+      text-align: center;
+      padding: 0.5rem;
+      width: 100%;
+      display: block;
+    }
+  
+    .nav-links-mobile {
+      display: block;
+      text-align: center;
+      margin: 0rem auto;
+      border-radius: 4px;
+      width: 145px;
+      text-decoration: none;
+      font-size: 1.4rem;
+      background-color: transparent;
+      color: #ffffff;
+      padding: 14px 20px;
+      border: 1px solid #fff;
+      transition: all 0.3s ease-out;
+    }
+  
+    .nav-links-mobile:hover {
+      background: #000000;
+      color: #ffffff;
+      transition: 250ms;
+    }
+  
+    .nav-item .dropdown-content {
+      position: absolute;
+      top: 100%; /* Adjusted positioning */
+      left: 0;
+      display: none;
+      background-color: #213675;
+      min-width: 200px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+  
+    .nav-item .dropdown-content {
+      position: relative;
+      top: 0; /* Adjusted positioning */
+      left: 0;
+      display: block; /* Ensure dropdown is displayed in mobile view */
+      background-color: #213675;
+      min-width: 200px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+  }
+  
+  @media screen and (min-width: 961px) {
+    .nav-item {
+      height: 90px;
+    }
+  }
+  

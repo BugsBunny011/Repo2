@@ -1,0 +1,55 @@
+/* OurStory.css */
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .content-wrap {
+    flex: 1;
+
+  }
+  
+  .our-story-container {
+    max-width: 100%;
+    margin: 0 auto;
+    background-image: url('/public/Final Images/OurStory2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px;
+    border-radius: 10px;
+    
+  }
+  
+  .our-story-title {
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Dancing Script', cursive; /* Add custom font */
+  }
+  
+  .our-story-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .our-story-section p {
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  hr {
+    border: 0;
+    height: 1px;
+    background: #000;
+    margin: 20px 0;
+  }
+  

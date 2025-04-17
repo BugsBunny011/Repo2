@@ -1,0 +1,70 @@
+/* CompanyOverview.css */
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .content-wrap {
+    flex: 1;
+  }
+  
+  .company-overview-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    background-image: url('/public/Final Images/CompanyOverviewimage.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+    overflow: hidden; /* Ensure background covers entire container */
+  }
+  
+  .company-overview-title {
+    font-size: 2.5rem;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif; /* Add custom font */
+    padding-bottom: 20px;
+  }
+  
+  .company-overview-section {
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for sections */
+    padding: 20px;
+    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+  }
+  
+  .company-overview-section h3 {
+    font-size: 1.8rem;
+    color: #ffffff; /* White text color */
+    margin-bottom: 10px;
+  }
+  
+  .company-overview-section p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    line-height: 1.6;
+  }
+  
+  .company-overview-image {
+    text-align: center;
+  }
+  
+  .company-overview-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  hr {
+    border: 0;
+    height: 1px;
+    background: #ffffff; /* White horizontal line */
+    margin: 20px 0;
+  }
+  
