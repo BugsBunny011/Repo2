@@ -16,6 +16,7 @@ export default function ContactUs() {
           <h2>Google Maps Location</h2>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.465537522285!2d77.27992087518734!3d28.52572368892363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce14ffbb2d6e1%3A0xc060f8eff80362a9!2sLinkwel%20Engineers!5e0!3m2!1sen!2sin!4v1724265367045!5m2!1sen!2sin"
+            title="Google Maps location"
             width="100%"
             height="300"
             style={{ border: 0 }}
