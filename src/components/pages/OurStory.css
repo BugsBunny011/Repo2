@@ -14,36 +14,58 @@
   .our-story-container {
     max-width: 100%;
     margin: 0 auto;
-    background-image: url('/public/Final Images/OurStory2.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 30px;
-    border-radius: 10px;
+    padding: 20px;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.6)
+    ),
+    url('/public/Final Images/OurStory2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  overflow: hidden;
     
   }
   
   .our-story-title {
     font-size: 3rem;
-    color: #fff;
+    color: #ffffff;
+    padding-bottom: 20px;
     text-align: center;
-    margin-bottom: 30px;
-    font-family: 'Dancing Script', cursive; /* Add custom font */
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
   }
   
   .our-story-section {
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
     margin-bottom: 30px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.05); /* Very light white tint */
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 4px solid #007bff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   
   .our-story-section p {
-    font-size: 1.2rem;
-    color: #fff;
-    line-height: 1.6;
-    margin-bottom: 10px;
+    font-size: 1.1rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #e0e0e0;
+    line-height: 1.8;
   }
   
   hr {
