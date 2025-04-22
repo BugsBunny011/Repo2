@@ -50,7 +50,7 @@ function Footer() {
       <section className='social-media'>
         <div className='social-media-wrap'>
             <div className='footer-logo'>
-            <Link to='#' className='footer-logo'>
+            <Link to='/' className='footer-logo'>
           <img
             src='/Final Images/Linkwel logo nobg .png'
             alt='Logo'
