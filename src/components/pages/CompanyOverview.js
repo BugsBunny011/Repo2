@@ -42,7 +42,7 @@ export default function CompanyOverview() {
           <div className="company-overview-section">
             <h3>Vision Statement:</h3>
             <p>
-              At Linkwel, we are dedicated to the meticulous design and precision manufacturing of elevators, cranes, and their components, engineered to elevate safety, efficiency, and reliability in material handling and vertical transportation. Our unwavering commitment extends beyond product excellence; we strive to surpass customer expectations through relentless innovation and unparalleled service. Together, we propel industries forward, delivering solutions that inspire confidence and drive progress.
+            At Linkwel, we specialize in precision-engineered elevators, cranes, and components designed for unmatched safety, efficiency, and reliability. Committed to innovation and exceptional service, we go beyond expectations to deliver solutions that move industries forward with confidence.
             </p>
           </div>
         </div>
