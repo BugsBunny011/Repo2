@@ -65,6 +65,20 @@ function Navbar() {
             )}
           </li>
           <li className="nav-item">
+            <div className="nav-links" onClick={() => toggleDropdown('products')}>
+              Products <span className="arrow-icon">{dropdown.products ? '▲' : '▼'}</span>
+            </div>
+            {dropdown.products && (
+              <div className="dropdown-content">
+                <Link to="/lifts" onClick={closeMobileMenu}>Lifts</Link>
+                <Link to="/cranes" onClick={closeMobileMenu}>Cranes</Link>
+                <Link to="/accessories" onClick={closeMobileMenu}>Accessories</Link>
+                <Link to="/product-catalog" onClick={closeMobileMenu}>Product Catalog</Link>
+                <Link to="/custom-solutions" onClick={closeMobileMenu}>Custom Solutions</Link>
+              </div>
+            )}
+          </li>
+          <li className="nav-item">
             
             <div className="nav-links" onClick={() => toggleDropdown('services')}>
               Services <span className="arrow-icon">{dropdown.services ? '▲' : '▼'}</span>
@@ -76,20 +90,6 @@ function Navbar() {
                 <Link to="/consultation" onClick={closeMobileMenu}>Consultation</Link>
                 <Link to="/repair-services" onClick={closeMobileMenu}>Repair Services</Link>
                 <Link to="/training" onClick={closeMobileMenu}>Training</Link>
-              </div>
-            )}
-          </li>
-          <li className="nav-item">
-            <div className="nav-links" onClick={() => toggleDropdown('products')}>
-              
-            </div>
-            {dropdown.products && (
-              <div className="dropdown-content">
-                <Link to="/lifts" onClick={closeMobileMenu}>Lifts</Link>
-                <Link to="/cranes" onClick={closeMobileMenu}>Cranes</Link>
-                <Link to="/accessories" onClick={closeMobileMenu}>Accessories</Link>
-                <Link to="/product-catalog" onClick={closeMobileMenu}>Product Catalog</Link>
-                <Link to="/custom-solutions" onClick={closeMobileMenu}>Custom Solutions</Link>
               </div>
             )}
           </li>
