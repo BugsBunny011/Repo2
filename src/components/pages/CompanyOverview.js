@@ -10,7 +10,7 @@ export default function CompanyOverview() {
     <div className="page-container">
       <div className="content-wrap">
         <div className="company-overview-container">
-          <h1 className='company-overview-title'>COMPANY OVERVIEW</h1>
+          <h1 className='company-overview-title'>Company Overview</h1>
 
           <div className="company-overview-section">
             <h3>Brief History:</h3>
