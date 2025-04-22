@@ -65,10 +65,9 @@
 }
 
 .mission-vision-overview-section h3 {
-  font-size: 1.8rem;
-  color: #ffffff;
-  margin-bottom: 10px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    color: #00d1ff;
 }
 
 .mission-vision-overview-section p {
